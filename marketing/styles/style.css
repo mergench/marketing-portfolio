@@ -1,0 +1,110 @@
+@import 'fonts.css';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body{
+    background: #f1f1f1;
+}
+.header__nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background: #fff;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+    overflow: hidden;
+    transition: 300ms linear;
+}
+.header__nav:hover{
+    width: 234px;
+}
+.logo{
+    display: block;
+    margin-left: 5px;
+    width: max-content;
+}
+.header__list{
+    padding-left: 15px;
+    width: max-content;
+}
+.header__link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #939393;
+}
+.header__link i{
+    display: flex;
+    justify-content: center;
+    margin-right: 29px;
+    font-size: 40px;
+    width: 40px;
+}
+
+.header__list li:last-child .header__link{
+    margin-bottom: 0;
+}
+.header__link:hover{
+    color: #2a86b1;
+}
+
+.header__content{
+    height: 500px;
+    padding-left: 62px;
+    margin: 30px 0;
+    border-radius: 14px;
+    background: url(../images/Фон.png) no-repeat center/cover, #fff;
+    display: flex;
+    align-items: center;
+}
+.header__text{
+    max-width: 332px;
+    width: 100%;
+}
+.header__title{
+    font-size: 50px;
+    line-height: 59px;
+    color: #464748;
+}
+
+.header__descr{
+    font-size: 16px;
+    line-height: 19px;
+    color: #696868;
+    margin: 25px 0;
+    max-width: 314px;
+    text-align: justify;
+}
+.header__more{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 211px;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 30px;
+    background: #3fa5d5;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
